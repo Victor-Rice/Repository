@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <HBox alignment="CENTER" prefHeight="71.0" prefWidth="600.0" spacing="20.0">
+            <children>
+                <Label text="Current money: " />
+                <Label fx:id="lblCurrentMoney" text="1000" />
+            <Label text="Current Bet: " />
+            <Label fx:id="lblCurrentBetAmount" text="0" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="76.0" prefWidth="600.0">
+            <children>
+                <Label fx:id="lblBetAmount" text="Bet Amount: " />
+                <TextField fx:id="txtBet" onKeyTyped="#userInput" promptText="input bet amount" />
+                <Button fx:id="btnBet" disable="true" mnemonicParsing="false" onAction="#Bet" text="Bet" />
+            </children>
+        </HBox>
+      <VBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label text="Note: Game will run without bets if you don't want to bet or if you lose all money.">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+        <HBox alignment="CENTER" prefHeight="76.0" prefWidth="600.0" spacing="50.0">
+            <children>
+                <Button fx:id="btnRock" mnemonicParsing="false" onAction="#Rock" text="Rock" />
+                <Button fx:id="btnPaper" mnemonicParsing="false" onAction="#Paper" text="Paper" />
+                <Button fx:id="btnScissors" mnemonicParsing="false" onAction="#Scissors" text="Scissors" />
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding></HBox>
+        <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" spacing="35.0">
+            <children>
+                <Label text="Player's Choice: " />
+                <Label fx:id="lblPlayersChoice" text="na" />
+                <Label text="Computer's Choice: " />
+                <Label fx:id="lblComputerChoice" text="na" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label fx:id="lblWinOrLose" alignment="CENTER" text="Win or Lose?">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</VBox>
