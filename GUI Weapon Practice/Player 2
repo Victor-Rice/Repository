@@ -1,0 +1,9 @@
+[wep]Assault Rifle,32,7,12
+[wep]Pistol,16,8,11
+[wep]Hunting Rifle,8,15,15
+[arm]Light Armor,Light,7,10 lbs
+[arm]Medium Armor,Medium,13,17 lbs
+[arm]Heavy Armor,Heavy,25,35 lbs
+[itm]Bandage,5
+[itm]Portable Turret,1
+[itm]Grenade,2
